@@ -1,0 +1,7 @@
+preprocess/data
+preprocess/data/*
+preprocess/facenet
+preprocess/facenet/*
+preprocess/avspeech_train.csv
+preprocess/avspeech_test.csv
+
