@@ -1,5 +1,6 @@
 #!/bin/bash
 
+mkdir -p data
 mkdir -p data/speaker_video_embeddings/
 mkdir -p data/speaker_video_embeddings/part_1
 
