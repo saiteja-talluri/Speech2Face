@@ -1,4 +1,3 @@
-preprocess/data
 preprocess/data/*
 preprocess/facenet
 preprocess/facenet/*
