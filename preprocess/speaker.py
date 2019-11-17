@@ -26,9 +26,9 @@ class Speaker():
 
 	def find_spec(self, filename):
 		print("-------------finding spectrogram for {filename}----------------")
-		with tf.compat.v1.Session(graph=tf.Graph()) as sess:
+		with tf.Session(graph=tf.Graph()) as sess:
 
-			holder = tf.compat.v1.placeholder(tf.string, [])
+			holder = tf.placeholder(tf.string, [])
 			file = tf.io.read_file(holder)
 			decoder = tf.contrib.ffmpeg.decode_audio(file, file_format = "wav", samples_per_second = self.sample_rate, channel_count = 1)
 
@@ -41,7 +41,7 @@ class Speaker():
 
 			stft = sess.run(stacked, feed_dict = {holder : self.spect_path + filename + ".wav"})
 			pickle.dump(stft, open(self.spect_path + filename  + ".pkl", "wb"))
-			
+
 			print("============STFT SHAPE IS {0}=============".format(stft.shape))
 
 	def extract_wav(self, filename):
@@ -51,7 +51,7 @@ class Speaker():
 		if (not os.path.isfile(self.spect_path + wavfile)):
 
 			os.popen("ffmpeg -t " + str(self.duration) + " -stream_loop -1  -i " + self.videos_path + filename + ".mp4" + " -vn " + self.spect_path + "/" + wavfile).read()	# Extract audio
-			
+
 			if(not os.path.isfile(self.spect_path + wavfile)):
 				print("----------------ffmpeg can't extract audio so deleting --------------")
 				os.remove(self.spect_path + "/" + wavfile)
@@ -59,7 +59,7 @@ class Speaker():
 
 			data, _ = librosa.load(self.spect_path + wavfile, sr = self.sample_rate, mono = self.mono, duration = self.duration)
 			librosa.output.write_wav(self.spect_path + wavfile, data, self.sample_rate, norm = False)
-			librosa.output.write_wav(self.audios_path +  wavfile, data, self.sample_rate, norm = False)    
+			librosa.output.write_wav(self.audios_path +  wavfile, data, self.sample_rate, norm = False)
 
 			self.find_spec(filename)
 			os.remove(self.spect_path + wavfile)
