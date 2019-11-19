@@ -2,13 +2,13 @@
 
 mkdir -p data
 mkdir -p data/speaker_video_embeddings/
-mkdir -p data/speaker_video_embeddings/part_1
 
 mkdir -p data/audios
 mkdir -p data/videos
 mkdir -p data/audio_spectrograms
 mkdir -p data/frames
 mkdir -p data/pretrained_model
+mkdir -p data/cropped_models
 
 echo "Done setting up directories set"
 
