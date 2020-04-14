@@ -1,0 +1,7 @@
+Model Loaded
+Loading IDs ............
+Total  6040 train  IDs Loaded !! 
+Total  train: 4832 valid: 604 test: 604  IDs Loaded !! 
+top [1, 5, 10, 25, 50, 75, 100] : [311 360 387 418 441 466 477] for  604  valid IDs and  604 Embeddings
+top [1, 5, 10, 25, 50, 75, 100] : [311 371 397 424 452 468 490] for  604  test IDs and  604 Embeddings
+top [1, 5, 10, 25, 50, 75, 100] : [2189 2524 2642 2814 2980 3089 3177] for  4832  train IDs and  4832 Embeddings

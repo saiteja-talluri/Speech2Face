@@ -1,0 +1,7 @@
+Model Loaded
+Loading IDs ............
+Total  6040 train  IDs Loaded !! 
+Total  train: 4832 valid: 604 test: 604  IDs Loaded !! 
+Total 306 358 395 Correct in  604  valid IDs and  604 Embeddings
+Total 307 365 388 Correct in  604  test IDs and  604 Embeddings
+Total 2231 2534 2652 Correct in  4832  train IDs and  4832 Embeddings

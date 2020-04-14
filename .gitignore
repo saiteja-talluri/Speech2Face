@@ -3,4 +3,5 @@ preprocess/facenet
 preprocess/facenet/*
 preprocess/avspeech_train.csv
 preprocess/avspeech_test.csv
-
+models
+models/final.h5
