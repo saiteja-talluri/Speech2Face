@@ -3,9 +3,9 @@
 
 A detailed report on results can be found here as [report.pdf](/results/report.pdf). It was made as the final project for CS 753 - **Automatic Speech Recognition** course in Autumn 2019 at Indian Institute of Technology (IIT) Bombay, India.
 
-## Usage
+# Usage
 
-# Folder structure of the project
+## Folder structure of the project
 
 Efficient structure to arrange the database (audio and video) and the code for this project to avoid any duplication.
 
@@ -46,7 +46,7 @@ Efficient structure to arrange the database (audio and video) and the code for t
     └── report.pdf
 ```
 
-# Getting Started
+## Getting Started
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
 
