@@ -79,6 +79,15 @@ usage: base.py [-h] [--from_id FROM_ID] [--to_id TO_ID] [--epochs EPOCHS]
 
 ## Results
 
+We have used face retrieval performace as a evaluation metric and we are able to achieve a decent accuracy. Increasing the computation power and using complete dataset can help us achieve greater accuracy.
+
+<p align="center">
+    <img src="results/result1.png" alt="Image"/>
+</p>
+<p align="center">
+    <img src="results/result2.png" alt="Image"/>
+
+</p>
 More training details to reciprocate can be found in our [final presentation](/results/presentation.pdf).
 
 ## Future Work
