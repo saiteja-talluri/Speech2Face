@@ -151,8 +151,9 @@ class AudioEmbeddingModel:
 			ids_helper = np.array(train_ids)
 			np.random.shuffle(ids_helper)
 
-			# opt_fn = tf.keras.optimizers.SGD(lr=0.1, decay=1e-6, momentum=0.9, nesterov=True)
 			# opt_fn = tf.keras.optimizers.Adam(learning_rate = 0.001*(0.98**curr_epoch), beta_1 = 0.5, decay = 0, amsgrad=False)
+			# If there is less GPU memory then try below
+			# opt_fn = tf.keras.optimizers.SGD(lr=0.1, decay=1e-6, momentum=0.9, nesterov=True)
 			# self.model.compile(optimizer = opt_fn,loss=self.loss_fn)
 
 			for i in range(int(np.ceil(len(ids_helper)/num_samples))):

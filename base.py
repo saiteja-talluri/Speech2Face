@@ -33,6 +33,7 @@ def main():
 
 	parser.add_argument("--load_model", type = str, default = "models/final.h5")
 	parser.add_argument("--save_model", type = str, default = "models/")
+	parser.add_argument("--train", action="store_true")
 	parser.add_argument("--verbose", action="store_true")
 	args = parser.parse_args()
 
@@ -66,13 +67,11 @@ def main():
 
 	valid_ids,test_ids=test_ids,valid_ids
 
-	# audemb_model.Test_accuracy(valid_ids,valid_ids,batchsize=args.batchsize,test_str=' valid')
+	if args.train:
+		audemb_model.train(train_ids,valid_ids,args.batchsize,args.save_model,start_epoch = args.start_epoch, num_epoch = args.epochs, num_samples = args.num_samples)
+	
 	audemb_model.get_L1_L2_loss(test_ids,batchsize=args.batchsize,test_str=' test')
 	audemb_model.get_L1_L2_loss(train_ids,batchsize=args.batchsize,test_str=' train')
-	# audemb_model.Test_accuracy(train_ids,train_ids,batchsize=args.batchsize,test_str=' train')
-
-	# audemb_model.train(train_ids,valid_ids,args.batchsize,args.save_model,start_epoch = args.start_epoch, num_epoch = args.epochs, num_samples = args.num_samples )
-	
 	audemb_model.Test_accuracy(train_ids,ids,batchsize=args.batchsize,test_str=' train')
 	audemb_model.Test_accuracy(valid_ids,ids,batchsize=args.batchsize,test_str=' valid')
 	audemb_model.Test_accuracy(test_ids,ids,batchsize=args.batchsize,test_str=' test')
