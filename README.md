@@ -3,7 +3,7 @@
 
 A detailed report on results can be found here as [report.pdf](/results/report.pdf). It was made as the final project for CS 753 - **Automatic Speech Recognition** course in Autumn 2019 at Indian Institute of Technology (IIT) Bombay, India.
 
-# Usage
+## Usage
 
 ## Folder structure of the project
 
@@ -54,6 +54,24 @@ These instructions will get you a copy of the project up and running on your loc
 ```
 cd preprocess/
 sh prepare_directory.sh
+```
 Download [AVSpeech Dataset](https://looking-to-listen.github.io/avspeech/download.html) in the folder.
-python data_download.py --from_id 1 --to_id 4000
+```
+python3 data_download.py
+usage: data_download.py [-h] [--from_id FROM_ID] [--to_id TO_ID]
+                        [--low_memory LOW_MEMORY] [--sample_rate SAMPLE_RATE]
+                        [--duration DURATION] [--fps FPS] [--mono MONO]
+                        [--window WINDOW] [--stride STRIDE]
+                        [--fft_length FFT_LENGTH] [--amp_norm AMP_NORM]
+                        [--face_extraction_model FACE_EXTRACTION_MODEL]
+                        [--verbose]
+```
+2. Now run the base file with train option if you want to train.
+```
+python3 base.py
+usage: base.py [-h] [--from_id FROM_ID] [--to_id TO_ID] [--epochs EPOCHS]
+               [--start_epoch START_EPOCH] [--batchsize BATCHSIZE]
+               [--num_gpu NUM_GPU] [--num_samples NUM_SAMPLES]
+               [--load_model LOAD_MODEL] [--save_model SAVE_MODEL] [--train]
+               [--verbose]
 ```
