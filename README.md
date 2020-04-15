@@ -5,7 +5,7 @@ A detailed report on results can be found here as [report.pdf](/results/report.p
 
 ## Usage
 
-## Folder structure of the project
+### Folder structure of the project
 
 Efficient structure to arrange the database (audio and video) and the code for this project to avoid any duplication.
 
@@ -46,7 +46,7 @@ Efficient structure to arrange the database (audio and video) and the code for t
     └── report.pdf
 ```
 
-## Getting Started
+### Getting Started
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
 
@@ -75,3 +75,14 @@ usage: base.py [-h] [--from_id FROM_ID] [--to_id TO_ID] [--epochs EPOCHS]
                [--load_model LOAD_MODEL] [--save_model SAVE_MODEL] [--train]
                [--verbose]
 ```
+
+## Authors
+
+* **Saiteja Talluri** - [saiteja-talluri](https://github.com/saiteja-talluri)
+* Ankit - [ankit-02](https://github.com/ankit-02)
+* Neelesh Verma
+
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
