@@ -87,6 +87,7 @@ We have used face retrieval performace as a evaluation metric and we are able to
 <p align="center">
     <img src="results/result2.png" alt="Image" width="800" height="700"/>
 </p>
+
 More training details to reciprocate can be found in [presentation.pdf](/results/presentation.pdf)
 
 ## Future Work
