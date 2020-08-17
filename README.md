@@ -75,7 +75,7 @@ usage: base.py [-h] [--from_id FROM_ID] [--to_id TO_ID] [--epochs EPOCHS]
                [--load_model LOAD_MODEL] [--save_model SAVE_MODEL] [--train]
                [--verbose]
 ```
-3. To run the code without training, you can download the final model [final.h5](https://drive.google.com/open?id=1v0y6eybC1YhhuFNcU6iy_LZN2l4XSRIO) and place it in `models` folder.
+3. To run the code without training, you can download the final model [final.h5](https://drive.google.com/file/d/1bXST5mfIWClABF5QBFNW9iMa3vZi9y2F) and place it in `models` folder.
 
 ## Results
 
