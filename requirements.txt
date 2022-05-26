@@ -22,6 +22,6 @@ face-recognition-models==0.3.0
 Keras-Applications==1.0.8
 Keras-Preprocessing==1.1.0
 tensorboard==1.14.0
-tensorflow-gpu==1.14.0
+tensorflow-gpu==2.7.2
 tensorflow-estimator==1.14.0
 ffmpeg==1.4
